@@ -1,0 +1,55 @@
+/*se le da color, fuente de letra y margen al cuerpo de la pagina*/
+body{
+margin: 0;
+font: normal 12px/18px 'Helvetica', Arial, sans-serif;
+background: #44accf;
+
+}
+/*se asigna ancho y margen al elemento contenedor*/
+#container{
+  width: 900px;
+  margin:0 auto;
+}
+
+#nav{
+  height: 50px;
+  background-color: #b7d84b;
+}
+/* se le configura span a bloque*/
+#nav span{
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 50px;
+  border-right: 1px solid #91ab3b;
+}
+/* se le asigna position relative para que su posicion sea la parte central*/
+#content {
+    position: relative;
+    padding: 20px 250px 60px 20px;
+    background: #fff;
+}
+
+#callout { /* basadas en las coordenadas creadas por #content*/
+    position: absolute;/* estableciendo los desplazamientos superior e inferior con position absolute,no afectab a otros elementos */
+    top: 100px;
+    bottom: 100px;
+    right: -80px;/*extraer el elemento fuera de su elemento principal que lo contiene*/
+    width: 210px;
+    padding: 0 20px;
+    border-top: 5px solid #f95b34;
+    background: #fa8366;
+  }
+  #callout p {/*se le da color a la fuente*/
+    color: white;
+  }
+  /* utiliza valor fixed para evitar que el pie de pagina se desplace.*/
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 860px;
+    padding: 0 20px;
+    background: #f36283;
+  }
